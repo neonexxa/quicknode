@@ -1,0 +1,22 @@
+export NODE_ENV=test
+export PROJECT_JWT_SECRET=top_secret
+export APPLICATION_DEBUG=false
+
+export STORAGE_DRIVER=s3
+export AWS_ACCESSKEYID=key
+export AWS_SECRETACCESSKEY=sec
+export AWS_REGION=ap-southeast-1
+export AWS_BUCKET_NAME=bucket
+
+export DATABASE_URL=herokupostgres
+
+export DATABASE_USERNAME=root
+export DATABASE_PASSWORD=yourpasswd
+export DATABASE_HOST=localhost
+export DATABASE_NAME=dummy
+export DATABASE_ENGINE=mysql
+# eval "$(direnv hook zsh)"
+export MAIL_HOST=mail.xx.my
+export MAIL_USERNAME=mail@mail.com
+export MAIL_PASSWORD=passmail
+export MAIL_PORT=465

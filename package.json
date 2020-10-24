@@ -1,0 +1,81 @@
+{
+  "name": "bandaros-node",
+  "version": "1.0.0",
+  "description": "BandarOS",
+  "main": "app.js",
+  "engines": {
+    "node": "14.4.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth": "^1.0.0",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "rand-token": "^1.0.1",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^5.0.0",
+    "swagger2-postman-generator": "^2.1.5",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-formatter-complexity": "^1.0.4",
+    "eslint-plugin-import": "^2.22.0",
+    "faker": "^5.1.0",
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
+    "sequelize-cli": "^6.2.0",
+    "sequelize-erd": "^1.3.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "scripts": {
+    "test": "NODE_ENV=test nyc mocha --recursive --exit 'Test/**/*.test.js' && ./node_modules/.bin/eslint --fix --ignore-path .gitignore .",
+    "start": "node app.js",
+    "lint": "./node_modules/.bin/eslint --fix --ignore-path .gitignore .",
+    "erd": "sequelize-erd --source ./erd_generator.js --destination ./erd.svg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ofo-tech/bandaros-node.git"
+  },
+  "keywords": [
+    "bandaros-node"
+  ],
+  "author": "Neonexxa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ofo-tech/bandaros-node/issues"
+  },
+  "homepage": "https://gitlab.com/ofo-tech/bandaros-node#readme"
+}

@@ -1,0 +1,62 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "mocha": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "fetch": true,
+        "describe": true,
+        "it": true,
+        "expect": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "no-await-in-loop":"off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        "no-extra-boolean-cast": "off",
+        "arrow-parens": "off",
+        "no-useless-return": "off",
+        "camelcase": "off",
+        "no-var": 2,
+        "prefer-const": 2,
+        "max-nested-callbacks": [
+            2,
+            3
+        ],
+        "max-depth": [
+            2,
+            {
+                "max": 2
+            }
+        ],
+        "max-lines": [
+            2,
+            200
+        ],
+        "complexity": [
+            2,
+            8
+        ],
+        "max-params": [
+            2,
+            4
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ]
+    }
+}

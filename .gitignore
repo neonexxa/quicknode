@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.envrc
+node_modules/*
+yarn.lock
+erd.svg
+.nyc_output
