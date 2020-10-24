@@ -1,3 +1,7 @@
+## QuickNode Framework
+
+Simplified the setup of express node
+
 ### Development
 
 1. Sequelize is setup following this tutorial https://dev.to/nedsoft/getting-started-with-sequelize-and-postgres-emp
@@ -33,7 +37,3 @@ npx sequelize-cli seed:generate --name role
 ### to visualize ERD
 
 `npm run erd`
-
-### CI AT BUILDKITE
-
-- use devofotech@gmail.com (password like usual)
