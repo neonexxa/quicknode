@@ -67,12 +67,12 @@
   },
   "repository": "git+ssh://git@gitlab.com:neonexxa/quicknode.git",
   "keywords": [
-    "bandaros-node"
+    "quicknode"
   ],
   "author": "Neonexxa",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/ofo-tech/bandaros-node/issues"
+    "url": "https://gitlab.com/neonexxa/quicknode/issues"
   },
-  "homepage": "https://gitlab.com/ofo-tech/bandaros-node#readme"
+  "homepage": "https://gitlab.com/neonexxa/quicknode#readme"
 }

@@ -47,7 +47,7 @@ app.use('/api', passport.authenticate('jwt'), secureRoute_list);
 app.use('/', openRoute_lists);
 
 app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
+  console.log(`App listening at http://localhost:${PORT}`);
 });
 
 module.exports = app;
