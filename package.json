@@ -1,7 +1,7 @@
 {
-  "name": "bandaros-node",
+  "name": "quicknode",
   "version": "1.0.0",
-  "description": "BandarOS",
+  "description": "QuickNode Framework",
   "main": "app.js",
   "engines": {
     "node": "14.4.0"
@@ -65,15 +65,12 @@
     "lint": "./node_modules/.bin/eslint --fix --ignore-path .gitignore .",
     "erd": "sequelize-erd --source ./erd_generator.js --destination ./erd.svg"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/ofo-tech/bandaros-node.git"
-  },
+  "repository": "git+ssh://git@gitlab.com:neonexxa/quicknode.git",
   "keywords": [
     "bandaros-node"
   ],
   "author": "Neonexxa",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/ofo-tech/bandaros-node/issues"
   },

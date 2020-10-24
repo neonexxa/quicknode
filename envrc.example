@@ -15,7 +15,7 @@ export DATABASE_PASSWORD=yourpasswd
 export DATABASE_HOST=localhost
 export DATABASE_NAME=dummy
 export DATABASE_ENGINE=mysql
-# eval "$(direnv hook zsh)"
+
 export MAIL_HOST=mail.xx.my
 export MAIL_USERNAME=mail@mail.com
 export MAIL_PASSWORD=passmail
