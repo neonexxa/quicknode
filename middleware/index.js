@@ -19,7 +19,7 @@ const ReqLogger = (req, res, next) => {
 };
 
 const requireAdminOrUser = (req, res, next) => {
-  if (req.user.RoleId !== 1 && req.user.RoleId !== 3) {
+  if (req.user.RoleId !== 1 && req.user.RoleId !== 2) {
     res.status(403).send({ error: 'access denied' });
     return;
   }
@@ -33,26 +33,8 @@ const requireAdmin = (req, res, next) => {
   next();
 };
 
-const requireAuditor = (req, res, next) => {
-  if (req.user.RoleId !== 4) {
-    res.status(403).send({ error: 'access denied' });
-    return;
-  }
-  next();
-};
-
-const requireCoordinator = (req, res, next) => {
-  if (req.user.RoleId !== 5) {
-    res.status(403).send({ error: 'access denied' });
-    return;
-  }
-  next();
-};
-
 module.exports = {
   ReqLogger,
   requireAdminOrUser,
   requireAdmin,
-  requireAuditor,
-  requireCoordinator,
 };
