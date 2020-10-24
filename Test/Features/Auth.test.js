@@ -26,7 +26,6 @@ describe('Auth Test', () => {
       .post('/login')
       .type('json')
       .send({ email: admin_user.email, password: admin_user.raw_password });
-
     res.should.have.status(200);
     res.body.should.have.property('token');
     res.body.should.have.property('refreshToken');

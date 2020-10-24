@@ -4,6 +4,9 @@ const router = express.Router();
 const c = require('../controllers');
 const m = require('../middleware');
 
+router.get('/role', c.role.index);
+router.get('/activitylog', m.requireAdminOrUser, c.activitylog.index);
+
 router.get('/users', m.requireAdmin, c.user.index);
 router.post('/user/:UserId', c.userUpdate.update);
 // Let's say the route below is very sensitive and we want only authorized users to have access
