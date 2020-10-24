@@ -1,0 +1,35 @@
+image: node:latest
+
+variables:
+  NODE_ENV: test
+  PROJECT_JWT_SECRET: top_secret
+  # setting for mysql in application
+  DATABASE_ENGINE: mysql
+  DATABASE_HOST: mysql
+  DATABASE_USERNAME: root
+  DATABASE_PASSWORD: root
+  DATABASE_NAME: mysql_db
+  # setting for mysql installed in docker image
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_DATABASE: mysql_db
+
+services:
+  - mysql:latest
+
+stages:
+  - build
+
+cache:
+  paths:
+    - node_modules/
+
+build_and_test:
+  stage: build
+  script:
+    - npm i
+    - npx sequelize-cli db:migrate
+    - npx sequelize-cli db:seed:all
+    - npm run test
+  artifacts:
+    paths:
+      - node_modules/
