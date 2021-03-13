@@ -12,7 +12,7 @@ let sequelize;
 
 if (config.dialect === 'postgres') {
   sequelize = new Sequelize(config.url, config);
-} else if (config.dialect === 'mysql') {
+} else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
